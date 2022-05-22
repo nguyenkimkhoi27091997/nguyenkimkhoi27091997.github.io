@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('./img/place1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  min-height: 100px;
+  padding: 32px 24px;
+  box-shadow: 0 2px 5px 0 rgb(51 62 73 0.1);
+  width: 360px;
+  align-self: center;
+  border-radius: 2px;
+  margin: 24px;
+  background-color: #fff;
+}
+
+.heading {
+  text-align: center;
+  font-size: 20px;
+}
+
+.desc {
+  text-align: center;
+  margin-top: 16px;
+  color: #636D77;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+.spacer {
+  margin-top: 36px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  font-weight: 700;
+  padding-bottom: 6px;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #b3b3b3;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-control:hover {
+  border-color: #1dbfaf;
+}
+
+.form-message {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 0 0;
+}
+
+.form-submit {
+  margin-top: 12px;
+  width: 100%;
+  background-color: #4CAF50;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #43A047;
+}
+
+.form-group.invalid .form-control {
+  border-color: red!important;
+}
+
+.form-group.invalid .form-message {
+  color: #f33a58!important;
+}
+
